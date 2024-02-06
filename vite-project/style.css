@@ -1,0 +1,389 @@
+@import url('https://db.onlinewebfonts.com/c/596ad608a41bd28960c777827cdd6af1?family=Apple+Chancery');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+a:hover{
+  font-size: 1.75rem;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.navbar{
+  margin-top: 35px !important;
+  width: 100%;
+  height: 65px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+}
+
+.navbar .links li{
+  padding-top: 13px;
+  transition: 0.6s;
+}
+
+.navbar .links li a{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.navbar .links{
+  display: flex;
+  gap: 10rem;
+}
+
+.navbar .links .logo{
+  border-width: 4px;
+  border-style: solid;
+  border-color: white;
+  border-radius: .15rem;
+}
+.navbar .links .logo a {
+  font-family: 'Apple Chancery', sans-serif !important;
+  font-size: 2rem;
+  padding: 5px 25px;
+  transition: 0.6s;
+  font-weight: normal;
+}
+
+.navbar .toggle_btn {
+  position: absolute;
+  right: 3%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .toggle_btn img{
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.logo1{
+  position: absolute;
+  left: 5%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: white;
+  border-radius: .15rem;
+  display: none;
+}
+
+.logo1 a {
+  font-family: 'Apple Chancery', sans-serif !important;
+  font-size: 2rem;
+  padding: 5px 25px;
+}
+
+.dropdown{
+  position: absolute;
+  right: 2rem;
+  top: 110px;
+  width: 460px;
+  background: #9a1602c7;
+  border-radius: 15px;
+  overflow: hidden;
+  display: none;
+  height: 0;
+  transition: height .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dropdown.open{
+  height: auto;
+  z-index: 2;
+  transition: height .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dropdown li{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.dropdown li a{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+@media (max-width: 1220px) {
+  .navbar .links{
+    display: none;
+  }
+
+  .navbar .toggle_btn{
+    display: block;
+
+  }
+  
+  .logo1{
+    display: block;
+  }
+
+  .dropdown{
+    display: block;
+  }
+  
+
+}
+
+@media (max-width: 1590px){
+  .hero{
+   padding: 0 10% !important; 
+
+   .d2{
+    font-size: 6rem;
+    transition: .2s;
+   }
+  }
+}
+
+@media (max-width: 1540px){
+  .hero{
+   padding: 0 8% !important; 
+
+   .d1{
+    font-size: 1.4rem;
+   }
+
+   .d2{
+    font-size: 5.5rem;
+    transition: .2s;
+   }
+  }
+}
+
+@media (max-width: 1480px){
+  .hero{
+   padding: 0 7% !important; 
+
+   .d1{
+    font-size: 1.35rem;
+   }
+
+   .d2{
+    font-size: 5rem;
+    transition: .2s;
+   }
+  }
+}
+
+@media (max-width: 1350px){
+  .hero{
+   padding: 0 6% !important; 
+  }
+   .d1{
+    font-size: 1.3rem;
+    transition: .2s;
+   }
+
+   .d2{
+    font-size: 4.5rem;
+    transition: .2s;
+   }
+
+   .can-container{
+    padding-left: 10% !important;
+  }
+
+}
+
+@media (max-width: 1295px){
+  .hero{
+   padding: 0 5% !important; 
+
+   .d1{
+    font-size: 1.2rem;
+    transition: .2s;
+   }
+
+   .d2{
+    font-size: 4.2rem;
+    transition: .2s;
+   }
+  }
+  .can-container{
+    padding-left: 10% !important;
+  }
+
+}
+
+@media (max-width: 1190px){
+  .hero{
+   padding: 0 3% !important; 
+
+   .d1{
+    font-size: 1rem;
+    transition: .2s;
+   }
+
+   .d2{
+    font-size: 3.8rem;
+    transition: .2s;
+    
+   }
+  }
+  .hero-content{
+    width: 342px !important;
+    height: 285px !important;
+  }
+  .can-container{
+    padding-left: 0% !important;
+  }
+
+}
+
+@media (max-width: 935px){
+  .hero{
+    padding: 5% !important;
+    transition: .2s;
+    height: 100% !important;
+    gap: 1rem !important;
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .hero-content{
+    padding-top: 130px !important;
+    margin: auto !important;
+    width: 100% !important;
+    height: 100% !important;    
+  }
+
+  .d1{
+    font-size: 1rem !important;
+  }
+
+  .d2{
+    font-size: 5rem !important;
+  }
+
+  .can-container{
+    text-align: center;
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 666px){
+  .hero{
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  .hero-content{
+    padding-top: 130px !important;
+    margin: auto !important;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .dropdown{
+    left: 2rem;
+    width: unset;
+  }
+
+  
+}
+
+.can-container {
+  top: 10em;
+  min-width: 600px;
+  height: 600px;
+  rotate: 15deg;
+  padding-left: 15%;
+}
+
+.drink {
+  overflow:hidden !important;
+}
+
+
+.hero{
+  padding: 0 10%;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2,1fr) ;
+  align-items: center;
+  gap: 5rem;
+  overflow: hidden;
+  z-index: 1;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #9A1502;
+}
+
+
+.hero-content {
+  color: white;
+  height: auto;
+}
+
+.d1 {
+  font-family: 'Lucida Console', monospace;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.d2{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: 6.5rem;
+}
+
+.d3{
+
+  padding:none;
+  position:relative;
+  margin-top: 30px;
+}
+
+.d3t{
+  background-color: #03042e;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Helvetica', sans-serif ;
+  padding: 15px 100px;
+  border-radius: 0.2rem;
+  transition: all .15s ease;
+
+}
+
+.d3t:hover {
+  font-size: 1.25rem;
+  cursor: pointer;
+  background-color: #03042ea9;
+}
